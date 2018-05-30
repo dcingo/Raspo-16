@@ -117,13 +117,34 @@ public class Raspor extends JDialog {
         RSP rsp = new RSP();
         String str = RSPTextField.getText();
         ClassDT[][] interval = rsp.AnalizRSP(str);
-        if(interval[0][0]!=null)textField1.setText(interval[0][0].toString1metod()+" - "+interval[0][1].toString1metod());
-        if(interval[1][0]!=null)textField2.setText(interval[1][0].toString234metod()+" - "+interval[1][1].toString234metod());
-        if(interval[2][0]!=null)textField3.setText(interval[2][0].toString234metod()+" - "+interval[2][1].toString234metod());
-        if(interval[3][0]!=null)textField4.setText(interval[3][0].toString234metod()+" - "+interval[3][1].toString234metod());
-        if(interval[4][0]!=null)textField5.setText(interval[4][0].toString234metod()+" - "+interval[4][1].toString234metod());
-        if(interval[5][0]!=null)textField6.setText(interval[5][0].toString234metod()+" - "+interval[5][1].toString234metod());
-        if(interval[6][0]!=null)textField7.setText(interval[6][0].toString234metod()+" - "+interval[6][1].toString234metod());
+        textField1.setText("");
+        textField2.setText("");
+        textField3.setText("");
+        textField4.setText("");
+        textField5.setText("");
+        textField6.setText("");
+        textField7.setText("");
+        if(interval[0][0]!=null){
+            textField1.setText(interval[0][0].toString1metod()+" - "+interval[0][1].toString1metod());
+        }
+        if(interval[1][0]!=null){
+            textField2.setText(interval[1][0].toString234metod()+" - "+interval[1][1].toString234metod());
+        }
+        if(interval[2][0]!=null){
+            textField3.setText(interval[2][0].toString234metod()+" - "+interval[2][1].toString234metod());
+        }
+        if(interval[3][0]!=null){
+            textField4.setText(interval[3][0].toString234metod()+" - "+interval[3][1].toString234metod());
+        }
+        if(interval[4][0]!=null){
+            textField5.setText(interval[4][0].toString234metod()+" - "+interval[4][1].toString234metod());
+        }
+        if(interval[5][0]!=null){
+            textField6.setText(interval[5][0].toString234metod()+" - "+interval[5][1].toString234metod());
+        }
+        if(interval[6][0]!=null){
+            textField7.setText(interval[6][0].toString234metod()+" - "+interval[6][1].toString234metod());
+        }
         textField8.setText(Double.toString(rsp.getLengthPN()));
 
         list2.setListData(searchLog.getDOI('2'));

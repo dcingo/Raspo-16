@@ -50,7 +50,7 @@ public class Fmain extends JDialog {
     }
 
     public static void main(String[] args) {
-        Fmain dialog = new Fmain();
+        Raspor dialog = new Raspor();
         dialog.pack();
         dialog.setVisible(true);
         System.exit(0);

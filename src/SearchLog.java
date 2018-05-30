@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Vector;
 
 public class SearchLog {
-    private String fileLog = "D://monitoring.log";
+    private String fileLog = "//monitoring.log";
 
     public String getFileLog() {
         return fileLog;
@@ -26,7 +26,7 @@ public class SearchLog {
                     if (str.length() < 18) continue;
                     if(str.charAt(16) == metod){
                         result.insertElementAt(str,0);
-                        System.out.println(str);
+                        //System.out.println(str);
                     }
 
                 }

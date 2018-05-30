@@ -40,6 +40,10 @@ public class RSP {
             return null;
         }
         ClassDT[][] result = new ClassDT[7][2];
+        for(int i =0;i<7;i++){
+            result[i][0]=null;
+            result[i][1]=null;
+        }
         String[] s = Rasporjenie.split("-");
         if(s.length <1){
             System.out.println("Ошибка в РСП");
